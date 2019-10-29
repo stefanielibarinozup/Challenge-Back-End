@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bd8e820-e5e4-485c-8226-169b23e8c9f7" name="Default Changelist" comment="" />
+    <list default="true" id="ac268ede-557a-4302-bd1d-094dfea8bba2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../listartopicos/src/main/java/br/com/zup/challenge/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../listartopicos/src/main/java/br/com/zup/challenge/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/file_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/file.kotlin_module" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,17 +19,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Challenge-Back-End" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="jdkForImporter" value="#JAVA_HOME" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectId" id="1SqLoaC7JHkK4AfvDDQ6Hb1Yzhv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target" />
   </component>
-  <component name="ProjectId" id="1SqHmlPsegh7J7RcyiZ7KHiBjiY" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Challenge\Challenge-Back-End\arquivos\target" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -32,16 +43,36 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.zup.challenge.App" />
+      <module name="file" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.zup.challenge.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5bd8e820-e5e4-485c-8226-169b23e8c9f7" name="Default Changelist" comment="" />
-      <created>1572284366211</created>
+      <changelist id="ac268ede-557a-4302-bd1d-094dfea8bba2" name="Default Changelist" comment="" />
+      <created>1572286355019</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572284366211</updated>
+      <updated>1572286355019</updated>
     </task>
     <servers />
   </component>
@@ -50,7 +81,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
