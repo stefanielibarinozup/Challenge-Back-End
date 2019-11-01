@@ -16,26 +16,42 @@ public class App {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(BASE_URL))
                 .build();
-
        HttpResponse<String> response =  client.send(request, HttpResponse.BodyHandlers.ofString());
-            System.out.println(response.body());
-            //filterResult(response.body());
-
+            //System.out.println(response.body());
+            filterResult(response.body());
 
     }
 
      public static void filterResult (String response ) {
 
-//        String[] filterResult = response.split(",");
-//
-//         List<String> list = Arrays.asList(filterResult);
-//         for(String itemList : list){
-//             if(itemList.length() >= 6){
-//                 String itemListItem = itemList.substring(1, 6);
-//                 if(itemListItem.equals("title")){
-//                     System.out.println(itemList);
-//                 }
-//             }
-//         }
+        String[] filterResult = response.split(",");
+        int cont = 0;
+
+         List<String> list = Arrays.asList(filterResult);
+
+         for(String itemList : list){
+             if(itemList.length() >= 6){
+                 String itemListItem = itemList.substring(1, 6);
+                 if(itemListItem.equals("title") && cont <20){
+                     cont ++;
+                     itemList = itemList.substring(8, itemList.lastIndexOf("\"") );
+                     //System.out.println(itemList);
+                 }
+             }
+         }
+         int j;
+         int key;
+         int i;
+
+         for (j = 1; j < vetor.length; j++)
+         {
+             key = vetor[j];
+             for (i = j - 1; (i >= 0) && (vetor[i] > key); i--)
+             {
+                 vetor[i + 1] = vetor[i];
+             }
+             vetor[i + 1] = key;
+         }
+
     }
 }
