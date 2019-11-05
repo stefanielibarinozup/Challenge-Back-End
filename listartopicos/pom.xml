@@ -35,7 +35,7 @@
     </dependencies>
 
     <groupId>br.com.zup.challenge</groupId>
-    <artifactId>file</artifactId>
+    <artifactId>listar</artifactId>
     <version>1.0-SNAPSHOT</version>
 
 
