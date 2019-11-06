@@ -1,4 +1,4 @@
-package br.com.zup.challenge.integra.o.com.HTTP;
+package br.com.zup.challenge.integracao;
 
 public class Dados {
     private String id;

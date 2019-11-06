@@ -1,10 +1,10 @@
-package br.com.zup.challenge.integra.o.com.HTTP;
+package br.com.zup.challenge.integracao;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class IntegraçãoComHttpApplicationTests {
+class IntegracaoHttpApplicationTests {
 
 	@Test
 	void contextLoads() {
