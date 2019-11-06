@@ -16,6 +16,9 @@ Consiste num algoritmo que lista 20 tópicos de um determinado site em ordem alf
 
 Consiste num algoritmo que realiza uma requisição POST, requisição DELETE e autenticação do tipo Bearer
 
+Frameworks utilizados:
+* Spring Boot (Feign)
+
 ## Como executar
 
 1. Obtenha o projeto por meio de clone, fork ou download
