@@ -13,16 +13,15 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping(value="/api")
-@Api(value="ApiRest peopleS")
-public class PeopleResource {
+@RequestMapping("/people")
+
+public class PeopleController {
 
     @Autowired
     PeopleRepository peopleRepository;
 
 
-    @ApiOperation(value="Cadastrar pessoa")
-    @PostMapping("/people")
+    @PostMapping("")
     public People salvaPeople(@RequestBody @Valid People people){
         return peopleRepository.save(people);
     }
@@ -38,7 +37,7 @@ public class PeopleResource {
         return peopleRepository.save(people);
     }
     @ApiOperation(value="Deleta pessoa")
-    @DeleteMapping("/people")
+    @DeleteMapping("/people/{cpf}")
     public void deletePeople(@RequestBody @Valid People people){
         peopleRepository.delete(people);
     }
