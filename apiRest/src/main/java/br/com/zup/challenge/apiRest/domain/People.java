@@ -5,18 +5,18 @@ import java.io.Serializable;
 
 @Entity
 @Table(name="TB_PEOPLE")
-
 public class People implements Serializable{
 
     private static final long serialVersionUID =1L;
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column
     private long id;
     private String nome;
     private String cpf;
 
-    public People(long id, String nome, String cpf) {
+    public People(String nome, String cpf) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;

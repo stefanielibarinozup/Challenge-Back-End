@@ -13,33 +13,36 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/people")
-
+@RequestMapping()
 public class PeopleController {
 
     @Autowired
-    PeopleRepository peopleRepository;
+    private PeopleRepository repository;
 
+    public PeopleController(PeopleRepository peopleRepository) {
+        this.repository = peopleRepository;
+    }
 
-    @PostMapping("")
+    @PostMapping("/people")
     public People salvaPeople(@RequestBody @Valid People people){
-        return peopleRepository.save(people);
+        System.out.println(people.getCpf().toString()+ people.getNome().toString());
+        return repository.save(people);
     }
 
     @GetMapping("/people")
     public List<People> listarPeople(){
-        return peopleRepository.findAll();
+        return repository.findAll();
     }
 
     @ApiOperation(value="Atualiza")
     @PutMapping("/people")
     public People atualizaPeople(@RequestBody @Valid People people){
-        return peopleRepository.save(people);
+        return repository.save(people);
     }
     @ApiOperation(value="Deleta pessoa")
     @DeleteMapping("/people/{cpf}")
     public void deletePeople(@RequestBody @Valid People people){
-        peopleRepository.delete(people);
+        repository.delete(people);
     }
 
 }
