@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PeopleRepository extends JpaRepository<People, Long> {
     People findById(long id);
+    //void removeByCpf(String cpf);
 
 
 }

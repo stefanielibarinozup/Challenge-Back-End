@@ -16,6 +16,9 @@ public class People implements Serializable{
     private String nome;
     private String cpf;
 
+    public People() {
+    }
+
     public People(String nome, String cpf) {
         this.id = id;
         this.nome = nome;
