@@ -4,6 +4,7 @@ import br.com.zup.challenge.apiRest.domain.People;
 import br.com.zup.challenge.apiRest.repository.PeopleRepository;
 //import io.swagger.annotations.Api;
 //import io.swagger.annotations.ApiOperation;
+import br.com.zup.challenge.apiRest.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.*;
@@ -17,33 +18,31 @@ import java.util.List;
 public class PeopleController {
 
     @Autowired
-    private PeopleRepository repository;
+    private Service service;
 
-    public PeopleController(PeopleRepository peopleRepository) {
-
-        this.repository = peopleRepository;
+    public PeopleController(Service service) {
+        this.service = service;
     }
 
     @PostMapping("/people")
     public People salvaPeople(@RequestBody @Valid People people){
-        return repository.save(people);
+        return service.salvaPeople(people);
     }
-
     @GetMapping("/people")
     public List<People> listarPeople(){
-        return repository.findAll();
+        return service.listarPeople();
     }
-
 
     @PutMapping("/people")
     public People atualizaPeople(@RequestBody @Valid People people)
     {
-        return repository.save(people);
+        return service.atualizaPeople(people);
     }
+
     @DeleteMapping("/people/{id}")
     public void deletePeople(@RequestBody @Valid People people)
     {
-        repository.delete(people);
+        service.deletePeople(people);
     }
 
 }
