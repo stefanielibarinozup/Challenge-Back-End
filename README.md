@@ -41,19 +41,6 @@ Frameworks utilizados:
 https://github.com/stefanielibarinozup/Challenge-Back-End/tree/master/apiRest
 
 
-## Sexto desafio
-*É hora de persistir
-
-Consiste num algoritmo capaz de cadastrar pessoas, visualizar, atualizar e remover. Foi utilizado banco em memoria H2 e testes unitários cobrindo 
-até 80% do código com jUnit e Mockito.
-
-Frameworks utilizados:
-* Spring Boot 
-* Spring Data
-
-https://github.com/stefanielibarinozup/Challenge-Back-End/tree/master/apiRestH2
-
-
 ## Como executar
 
 1. Obtenha o projeto por meio de clone, fork ou download
