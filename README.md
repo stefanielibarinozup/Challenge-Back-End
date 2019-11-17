@@ -59,5 +59,4 @@ https://github.com/stefanielibarinozup/Challenge-Back-End/tree/master/apiRestH2
 1. Obtenha o projeto por meio de clone, fork ou download
 2. Abra o projeto na IDE Intellij
 3. Execute o projeto pelo botão Run ou pressionando Shift+F10
-
-## Todos contém arquivos jar
+* Todos contém arquivos jar
