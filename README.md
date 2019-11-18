@@ -26,12 +26,15 @@ Frameworks utilizados:
 
 https://github.com/stefanielibarinozup/Challenge-Back-End/tree/master/integracao
 
+## Quarto desafio
+* Sua primeira aplicação Spring Boot
+
 
 ## Quinto desafio
 * Sua primeira ApiRest
 
-Consiste num algoritmo capaz de cadastrar pessoas, visualizar, atualizar e remover. Foi utilizado banco de dados postgresql e testes unitarios cobrindo 
-até 80% do codigo com jUnit e Mockito.
+Consiste num algoritmo capaz de cadastrar pessoas, visualizar, atualizar e remover. Foi utilizado banco de dados em memoria H2, documentação 
+swagger e testes unitários cobrindo até 80% do código com jUnit e Mockito. 
 
 
 Frameworks utilizados:
