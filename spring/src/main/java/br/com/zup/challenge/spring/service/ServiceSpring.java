@@ -12,9 +12,14 @@ import java.io.RandomAccessFile;
 public class ServiceSpring {
 
     public static void operacoesComandos(String args[]) throws IOException {
+        String argComando = "";
+        String argValor = "";
+
         if(args.length > 0){
-            String argComando = args[0];
-            String argValor = args[1];
+            argComando = args[0];
+            if(args.length >= 2){
+                argValor = args[1];
+            }
 
             if(argComando.equals("set")) {
                 new CreateData().setData(argValor);
@@ -32,11 +37,12 @@ public class ServiceSpring {
                 System.out.println("Comando não encontrado!");
             }
         }
-        else {
-            new CreateData().setData("ABCDEFA:171");
-            new ReadData().getData("ABCDEFA");
-            new ListData().getData();
-            new DeleteData().deleteData("ABCDEFA");
-        }
+        // Pra start fora do jar descomente abaixo
+//        else {
+//            new CreateData().setData("ABCDEFA:171");
+//            new ReadData().getData("ABCDEFA");
+//            new ListData().getData();
+//            new DeleteData().deleteData("ABCDEFA");
+//        }
     }
 }
