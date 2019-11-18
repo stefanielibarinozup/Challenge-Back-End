@@ -29,6 +29,12 @@ https://github.com/stefanielibarinozup/Challenge-Back-End/tree/master/integracao
 ## Quarto desafio
 * Sua primeira aplicação Spring Boot
 
+Consiste num algoritmo capaz de adicionar, recuperar, listar e deletar uma chave e valor, executado pela linha de comando do arquivo Jar.
+
+https://github.com/stefanielibarinozup/Challenge-Back-End/tree/master/spring
+
+Frameworks utilizados:
+* Spring Boot
 
 ## Quinto desafio
 * Sua primeira ApiRest
